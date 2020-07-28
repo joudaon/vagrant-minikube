@@ -1,0 +1,13 @@
+vagrant_conf:
+    # si da el error "mkdir: cannot create directory ‘/tmp/vagrant-cache/apt’: Permission denied"
+    # prueba a deshabilitar cachier, levantar la maquina, destruirla y habilitarlo de nuevo
+    cachier: true
+    rsync__auto: True
+
+ubuntu_conf:
+  hostname: ubuntu-minikube
+  cpus: 2
+  ip: 10.0.1.10
+  box: ubuntu/bionic64
+  box_url: ubuntu/bionic64
+  ram: 4096
